@@ -2,7 +2,7 @@
 
 A production-ready movie recommendation engine implementing multiple collaborative filtering approaches and matrix factorization techniques. Built with Python and designed for scalability and real-world deployment.
 
-## 🚀 Features
+##  Features
 
 - **Multiple Recommendation Algorithms**
   - User-Based Collaborative Filtering (Cosine Similarity)
@@ -21,7 +21,7 @@ A production-ready movie recommendation engine implementing multiple collaborati
   - Hyperparameter tuning
   - Visualization and insights
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Python 3.8+**
 - **Core Libraries:**
@@ -33,7 +33,7 @@ A production-ready movie recommendation engine implementing multiple collaborati
   - FastAPI (REST API)
   - Uvicorn (ASGI server)
 
-## 📊 How It Works
+##  How It Works
 
 ### 1. Data Processing
 - Loads MovieLens-style dataset (or generates sample data)
@@ -57,7 +57,7 @@ A production-ready movie recommendation engine implementing multiple collaborati
 - Hyperparameter tuning using grid search
 - Cross-validation for robust evaluation
 
-## 🏃‍♂️ Quick Start
+##  Quick Start
 
 ### Installation
 
@@ -101,9 +101,7 @@ python demo.py
 python api_server.py
 ```
 
-The API will be available at `http://localhost:8000` with interactive documentation at `http://localhost:8000/docs`
-
-## 🔌 API Endpoints
+##  API Endpoints
 
 - `GET /` - API information and available endpoints
 - `POST /recommendations` - Get personalized recommendations
@@ -122,7 +120,7 @@ curl -X GET "http://localhost:8000/user/1/recommendations?method=svd&n_recommend
 curl -X GET "http://localhost:8000/movies/popular?limit=10"
 ```
 
-## 📈 Performance Results
+##  Performance Results
 
 The system achieves competitive performance across different metrics:
 
@@ -130,7 +128,7 @@ The system achieves competitive performance across different metrics:
 - **User-Based CF:** Effective for users with sufficient rating history
 - **Item-Based CF:** Good for discovering similar items
 
-## 🧊 Cold Start Problem
+##  Cold Start Problem
 
 The system addresses the cold start problem through:
 
@@ -153,7 +151,7 @@ movie-recommendation-system/
     └── recommendation_model.pkl # Trained model file
 ```
 
-## 🔧 Configuration & Customization
+##  Configuration & Customization
 
 ### Using Real MovieLens Data
 
@@ -179,7 +177,7 @@ Adjust similarity calculations by modifying:
 - Number of similar users/items to consider
 - Similarity calculation methods
 
-## 🚀 Deployment Considerations
+##  Deployment Considerations
 
 ### Scalability
 - **Database Integration:** Replace in-memory matrices with database storage
@@ -196,7 +194,7 @@ Adjust similarity calculations by modifying:
 - **Load Balancing:** Handle multiple concurrent requests
 - **Model Versioning:** Track and manage different model versions
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 - **RMSE (Root Mean Square Error):** Measures prediction accuracy
 - **MAE (Mean Absolute Error):** Average prediction error
@@ -204,7 +202,7 @@ Adjust similarity calculations by modifying:
 - **Recall@K:** Coverage of relevant items in top-K
 - **Diversity:** Variety in recommended items
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -212,23 +210,17 @@ Adjust similarity calculations by modifying:
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - MovieLens dataset for providing real-world movie rating data
 - Surprise library for collaborative filtering implementations
 - FastAPI for the excellent web framework
 - The open-source community for inspiration and tools
 
-## 📧 Contact
+##  Contact
 
 **Biruk D** - [GitHub](https://github.com/birukd1)
-
-Project Link: [https://github.com/birukd1/movie-recommendation-system](https://github.com/birukd1/movie-recommendation-system)
-
----
-
-⭐ **Star this repository if you found it helpful!**
